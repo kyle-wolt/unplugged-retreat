@@ -87,6 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}   
+
+
 /***** BASE HEADER - FOOTER STYLES *****/
 
 header,
@@ -97,11 +103,22 @@ footer {
   flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -109,11 +126,31 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin: 50px 0;
+}
+
+footer .contact a {
+  margin: 0;
 }
 
 footer .social-icons {
@@ -126,6 +163,11 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /***** MOBILE STYLE - HOMEPAGE *****/
@@ -143,23 +185,52 @@ aside {
   flex-flow: row wrap;
 }
 
+.form-description h3 {
+  margin: 0;
+}
+
+.form {
+  padding: 20px 0 50px 0;
+}
+
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.feature .feature-items {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+.features-items h1 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 60%;
+}
+
+.features p {
+  margin: 0;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h1 {
+  margin-bottom: 25px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 25px 0;
 }
 
 /***** MOBILE STYLES - ABOUT PAGE *****/
@@ -178,6 +249,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.contact-content a {
+  margin: 0;
+}
+
 /***** MOBILE STYLES - FAQ PAGE *****/
 
 .faq {
@@ -194,7 +269,13 @@ aside {
   flex-flow: row wrap;
 }
 
+.faq h1 {
+  margin-bottom: 45px;
+}
 
+.faq-content {
+  margin-bottom: 50px;
+}
 
 
 /* ==========================================================================
