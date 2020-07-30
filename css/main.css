@@ -488,13 +488,52 @@ aside {
   .faq-content {
     flex-basis: 45%;
   }
-
-
 }
 
 @media only screen and (min-width: 1200px) {
       /*Desktop Style*/
   
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 30%;
+  }
+
+  .features h1 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /*About Page*/
+
+  .mission h1,
+  .contact-section .content-wrapper h1 {
+    width: 95%;
+  }
+
+  /*FAQ Page*/
+
+  .faq h1 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
