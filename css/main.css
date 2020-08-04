@@ -134,11 +134,11 @@ p {
 }
 
 img {
-  
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -174,8 +174,12 @@ header .content-wrapper {
   margin: 0;
 }
 
-header img {
-  width: 50%;
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -250,6 +254,7 @@ footer .copyright {
   flex-flow: row wrap;
   background: url(../img/jake-melara-30679-unsplash.jpg) no-repeat center #333333;
   background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -482,14 +487,25 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
       /*Tablet Style*/
+
   .content-wrapper {
-    width: 640px;
+    max-width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px 0;
   }
 
@@ -499,24 +515,38 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 35%;
+  }
+
   header nav {
     width: 20%;
   }
 
   header nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .header-divider {
     display: none;
   }
 
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
   aside .content-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    flex-flow: row wrap;
     margin: 50px 0;
   }
 
@@ -524,6 +554,10 @@ input[type=button] {
   aside .form {
     width: 40%;
     margin: 0;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
   }
 
   .features article {
@@ -535,7 +569,7 @@ input[type=button] {
   }
 
   .features .features-items-description {
-    width: 50%;
+    width: 62%;
   }
 
   .reviews article {
@@ -543,8 +577,18 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   footer .content-wrapper {
@@ -556,12 +600,23 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact,
   footer .social {
     margin: 0;
   }
+
+  footer h3 {
+    margin-bottom: 40px;
+  }
+
+  footer .contact a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    }
 
   .copyright {
     width: 100%;
@@ -595,24 +650,53 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  .faq h1 {
+  .faq h2 {
     width: 100%;
   }
 
   .faq-content {
     flex-basis: 45%;
   }
+
+  .faq h3,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
       /*Desktop Style*/
   
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  .hero-area .content-wrapper {
+    margin: 30px 0;
+  }
+
   .hero-area h1 {
-    width: 60%;
+    font-size: 3.75em;
+    line-height: 1.125;
+    width: 80%;
   }
 
   aside .content-wrapper {
@@ -624,7 +708,7 @@ input[type=button] {
     width: 30%;
   }
 
-  .features h1 {
+  .features h2 {
     width: 90%;
   }
 
@@ -636,17 +720,33 @@ input[type=button] {
     width: 42%;
   }
 
+  .reviews h2 {
+    margin-bottom: 100px;
+  }
+
   /*About Page*/
 
-  .mission h1,
-  .contact-section .content-wrapper h1 {
-    width: 95%;
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 98%;
+    font-size: 3em;
+  }
+
+  .contact-content {
+    width: 85%;
   }
 
   /*FAQ Page*/
 
-  .faq h1 {
+  .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h3,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
