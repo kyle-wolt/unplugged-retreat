@@ -103,6 +103,7 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
 }
 
 a {
@@ -658,7 +659,7 @@ input[type=button] {
     width: 100%;
   }
 
-  /*About Page*/
+  /***** TABLET STYLES - ABOUT PAGE *****/
 
   .mission-content {
     display: flex;
@@ -684,7 +685,7 @@ input[type=button] {
     align-items: flex-start;
   }
 
-  /*FAQ Page*/
+  /***** TABLET STYLES - FAQ PAGE *****/
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -764,7 +765,7 @@ input[type=button] {
     margin-bottom: 100px;
   }
 
-  /*About Page*/
+  /***** DESKTOP STYLES - ABOUT PAGE *****/
 
   .mission h2,
   .contact-section .content-wrapper h2 {
@@ -780,7 +781,7 @@ input[type=button] {
     width: 85%;
   }
 
-  /*FAQ Page*/
+  /***** DESKTOP STYLES - FAQ PAGE *****/
 
   .faq h2 {
     width: 100%;
