@@ -222,7 +222,7 @@ footer .content-wrapper {
 }
 
 footer .contact {
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 footer .contact a {
@@ -236,10 +236,20 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #527158;
+  border: 1px solid #527158;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -626,7 +636,7 @@ input[type=button] {
 
   footer .contact,
   footer .social {
-    margin: 0;
+    margin-bottom: 0;
   }
 
   footer h3 {
@@ -637,7 +647,12 @@ input[type=button] {
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    }
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
 
   .copyright {
     width: 100%;
